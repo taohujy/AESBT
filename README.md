@@ -13,7 +13,7 @@ Each expert reuses the shared encoder and appends MLP branch  that outputs the p
 After expert pretraining, each training sample is softly assigned to experts based on the partial likelihood under each expert's risk function.
 
 ### 4. Hybrid Gating Network
-An MLP that takes a patient's standardized age concatenated with SVM posterior probabilities over the `K` classes, and outputs softmax weights over the `K` experts.
+An MLP that takes a patient's standardized age concatenated with SVM posterior probabilities over the classes, and outputs softmax weights over the experts.
 
 ## Installation
 
